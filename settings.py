@@ -2,7 +2,7 @@ MONGO_HOST = 'localhost'
 MONGO_PORT = 27017
 MONGO_USER = ''
 MONGO_PASSWORD = ''
-DB_NAME = 'WorldCities'
+DB_NAME = 'placesDB'
 
 CITY_COLLECTION_NAME = 'cities'
 COUNTRY_COLLECTION_NAME = 'countries'
