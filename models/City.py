@@ -22,7 +22,7 @@ CITY_FIELDS = {
     'timezone': 17, # the iana timezone id (see file timeZone.txt) varchar(40)
     'modification_date': 18, # date of last modification in yyyy-MM-dd format
 }
-
+float("{0:.2f}".format(x)
 class City(object):
     def __init__(self, data):
         super(City, self).__init__()
@@ -34,7 +34,7 @@ class City(object):
         self.name = data[CITY_FIELDS['name']]
         self.ascii_name = data[CITY_FIELDS['ascii_name']]
         self.alternate_names = data[CITY_FIELDS['alternate_names']].split(',')
-         self.location = { 'type':"Point", 'coordinates': [data[CITY_FIELDS['latitude']], data[CITY_FIELDS['longitude']]] }
+        self.location = { 'type':"Point", 'coordinates': [float("{0:.4f}".format(data[CITY_FIELDS['latitude']]), float("{0:.4f}".format(data[CITY_FIELDS['longitude']])] }
         self.latitude = data[CITY_FIELDS['latitude']]
         self.longitude = data[CITY_FIELDS['longitude']]
         self.feature_class = data[CITY_FIELDS['feature_class']]
