@@ -34,6 +34,7 @@ class City(object):
         self.name = data[CITY_FIELDS['name']]
         self.ascii_name = data[CITY_FIELDS['ascii_name']]
         self.alternate_names = data[CITY_FIELDS['alternate_names']].split(',')
+         self.location = { 'type':"Point", 'coordinates': [data[CITY_FIELDS['latitude']], data[CITY_FIELDS['longitude']]] }
         self.latitude = data[CITY_FIELDS['latitude']]
         self.longitude = data[CITY_FIELDS['longitude']]
         self.feature_class = data[CITY_FIELDS['feature_class']]

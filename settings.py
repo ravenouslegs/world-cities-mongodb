@@ -33,6 +33,7 @@ CITY_FIELDS_BLACKLIST = [
     'admin4_code',
     'population',
     'elevation',
+    'alternate_names',
     'dem',
     'latitude',
     'longitude',
