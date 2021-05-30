@@ -58,7 +58,7 @@ COUNTRY_FIELDS_BLACKLIST = [
 # And you can customize the fields as well
 # The `geo_name_id` will always be added in case you need to refer each other
 ADD_CITY_TO_COUNTRY = True
-CITY_FIELDS_TO_ADD = ['name']
+CITY_FIELDS_TO_ADD = ['name','ascii_name']
 
 ADD_COUNTRY_TO_CITY = True
 COUNTRY_FIELDS_TO_ADD = [
